@@ -62,9 +62,9 @@ namespace Shopping_list
             foreach (Control p in this.Controls)
             {
                 if(p.GetType().Name == "Panel")
-                    p.Location = new Point(45, 50 + panelList.IndexOf((Panel)p) * 50);
+                    p.Location = new Point(45, 50 + panelList.IndexOf((Panel)p) * 40);
                 if (p.GetType().Name == "Button")
-                    p.Location = new Point(20, 50 + panelList.Count * 50);
+                    p.Location = new Point(20, 50 + panelList.Count * 40);
             }
         }
     }
